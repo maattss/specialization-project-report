@@ -26,6 +26,7 @@
 \usepackage{xparse,nameref}
 \usepackage[bottom]{footmisc} % Footnotes are fixed to bottom of page
 \usepackage{lipsum} % For generating dummy text
+\usepackage{csquotes}
 % --------- You can edit from this point on --------
 
 
@@ -107,11 +108,11 @@
 \pagenumbering{roman} % starting roman page numbering
 \newpage
 \section*{Acknowledgements}
-    \subfile{Chapters/Acknowledgements}
+    \subfile{Parts/Acknowledgements}
 
 \newpage
 \section*{Abstract}
-    \subfile{Chapters/Abstract}
+    \subfile{Parts/Abstract}
 
 \newpage
 {\setstretch{1.0} % line spacing for the list
@@ -131,20 +132,23 @@
 \pagenumbering{arabic} % Starting arabic page numbering
 \setcounter{page}{1} % sets pagecounter to 1
 
+\vspace*{6\baselineskip}
 \part{Introduction} % section/chapter name
-    \subfile{Chapters/01Introduction} % including the subfile for the chapter
+    This part introduces the topic of the project and its main purpose. A brief description of our motivation for choosing this task and why we found it interesting will be given. Because the project utilizes the Goal, Question, Metrics approach to define the research value of the project, an overview of these will also be presented. Lastly, an outline of the content will be shortly described to give the reader a brief overview of what’s included in this report.
+    \clearpage % clears the page after the introduction is finished
+    \subfile{Parts/01Introduction} % including the subfile for the chapter
 \clearpage % clears the page after the chapter is finished
 
 \part{Prestudy}
-    \subfile{Chapters/02Prestudy}
+    \subfile{Parts/02Prestudy}
 \clearpage
 
 \part{Own contribution}
-    \subfile{Chapters/03OwnContribution}
+    \subfile{Parts/03OurContribution}
 \clearpage
 
 \part{Discussion \& Conclusion}
-    \subfile{Chapters/04Discussion}
+    \subfile{Parts/04Discussion}
 \clearpage
 
 \newpage
@@ -154,14 +158,14 @@
 \bibliography{References.bib} % adds the references to the document
 }
 
-\newpage
-\renewcommand{\appendixpagename}{Appendix} % Heading of appendix
-\renewcommand{\appendixtocname}{Appendix} % name of appendix in TOC
-\appendixpage 
-\addappheadtotoc
+%\newpage
+%\renewcommand{\appendixpagename}{Appendix} % Heading of appendix
+%\renewcommand{\appendixtocname}{Appendix} % name of appendix in TOC
+%\appendixpage 
+%\addappheadtotoc
 
-\begin{appendices}
-    \subfile{Chapters/Appendix}
-\end{appendices}
+%\begin{appendices}
+%    \subfile{Chapters/Appendix}
+%\end{appendices}
 
 \end{document}
