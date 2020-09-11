@@ -68,7 +68,7 @@
 % ----- Sources -----
 \usepackage{natbib}
 \bibliographystyle{apaeng} % citation and reference list style
-\def\biblio{\clearpage\bibliographystyle{apaeng}\bibliography{References.bib}} % defines the \biblio command used for referencing in subfiles - DO NOT CHANGE
+\def\biblio{\clearpage\bibliographystyle{apaeng}\bibliography{references.bib}} % defines the \biblio command used for referencing in subfiles - DO NOT CHANGE
 
 
 % ----- Header and footer -----
@@ -157,8 +157,11 @@
 \renewcommand\refname{References} % name for the reference list
 {\setstretch{1.0} % linespacing for the references
 \addcontentsline{toc}{section}{References} % to change the name of the references in the TOC
-\bibliography{References.bib} % adds the references to the document
+\begin{thebibliography}{99}
+\bibliography{references.bib} % adds the references to the document
+\end{thebibliography}
 }
+
 
 %\newpage
 %\renewcommand{\appendixpagename}{Appendix} % Heading of appendix
