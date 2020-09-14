@@ -17,6 +17,16 @@
 \usepackage{subcaption} 
 \usepackage{appendix}
 \usepackage{chngcntr} % needed for correct table numbering
+\usepackage[
+    colorlinks=true, 
+    linkcolor=black,
+    anchorcolor=black,
+    citecolor=black,
+    filecolor=black,
+    menucolor=black,
+    runcolor=black,
+    urlcolor=blue
+    ]{hyperref}
 \counterwithin{table}{section} % numbering of tables 
 \counterwithin{figure}{section} % numbering of figures
 \numberwithin{equation}{section} % numbering of equations
@@ -134,22 +144,29 @@
 
 \vspace*{6\baselineskip}
 \part{Introduction} % section/chapter name
+\label{part:introduction}
     This part introduces the topic of the project and its main purpose. A brief description of our motivation for choosing this task and why we found it interesting will be given. Because the project utilizes the Goal, Question, Metrics approach to define the research value of the project, an overview of these will also be presented. Lastly, an outline of the content will be shortly described to give the reader a brief overview of what’s included in this report.
     \clearpage % clears the page after the introduction is finished
     \subfile{Parts/01Introduction} % including the subfile for the chapter
 \clearpage % clears the page after the chapter is finished
 
+\vspace*{6\baselineskip}
 \part{Prestudy}
+\label{part:prestudy}
     This is the part of the report where we will present the literature study piece of the project. It starts with explaining what an alternative game is, by listing some common characteristics together with examples of existing ones. After that, a technology review of possibilities in this field today will be given. In the end, some guidelines and approaches on what is important when designing a game (how to make it enjoyable) will be presented.
     \clearpage
     \subfile{Parts/02Prestudy}
 \clearpage
 
+\vspace*{6\baselineskip}
 \part{Own contribution}
+\label{part:contrubution}
     \subfile{Parts/03OurContribution}
 \clearpage
 
+\vspace*{6\baselineskip}
 \part{Discussion \& Conclusion}
+\label{part:discussion}
     \subfile{Parts/04Discussion}
 \clearpage
 
@@ -157,9 +174,9 @@
 \renewcommand\refname{References} % name for the reference list
 {\setstretch{1.0} % linespacing for the references
 \addcontentsline{toc}{section}{References} % to change the name of the references in the TOC
-\begin{thebibliography}{99}
+%\begin{thebibliography}{99} Trengs denne Siri?
 \bibliography{references.bib} % adds the references to the document
-\end{thebibliography}
+%\end{thebibliography}
 }
 
 
