@@ -1,72 +1,33 @@
 \documentclass[../Main.tex]{subfiles}
 \begin{document}
-\section{What are alternative games?}
-To be able to come up with a concept for an alternative game, as described in the research goal, a clear understanding of which games that can be categorized as alternative games is crucial. Let's first take a look at what “alternative” means in this context with some definitions of the word from three common dictionaries:
+This is the part of the report where we will present the literature study piece of the project. It starts with explaining what an alternative game is, by listing some common characteristics together with examples of existing ones. After that, a technology review of possibilities in this field today will be given. In the end, some guidelines and approaches on what is important when designing a game (how to make it enjoyable) will be presented.
+\clearpage
 
-\textbf{Oxford Learner’s dictionary:} \blockquote{Different from the usual or traditional way in which something is done.} \citeyearpar{oxfords_learner_dictionary_alternative_2020}.
+\include{Parts/Prestudy/05WhatAreAlternativeGames}
+\clearpage
 
-\textbf{Merriam Webster:} \blockquote{Different from the usual or conventional.} \citeyearpar{merriam-websters_collegiate_dictionary_alternative_2020}.
- 
-\textbf{Cambridge Dictionary:} \blockquote{Alternative things are considered to be unusual and often have a small but enthusiastic group of people who support them.} \citeyearpar{cambridge_dictionary_alternative_2020}.
+\include{Parts/Prestudy/06ExistingAlternativeGames}
+\clearpage
 
-While all of these dictionaries define the word differently, we can see that there are some commonalities. All three describe alternatives as something unusual or different from the usual. This may be the key take away from these definitions; an alternative game is a game where the creators have done something in such a way that it differs from other games.
+\include{Parts/Prestudy/07TechnologyReview}
+\clearpage
 
-To be able to more easily recognize alternative game concepts, we have looked at a lot of different existing alternative games and tried to find out what they have in common. The result of this research is a list of six characteristics, where alternative games often differ from ordinary ones. 
-
-\subsection{Alternative game characteristics}
-Our proposal of which games can be considered alternative games is then the following:
-
-If a game deviates from regular games in one or more of the game characteristics categories mentioned below, it can be considered an alternative game. 
-
-Below are explanations of all categories with coherent relevant alternative games presented.
-
-These categories are covering all alternative games we have studied during this phase of the project. However, there might exist additional characteristics from games that we are not aware of, or that’s not developed yet. As technology moves forward, it’s reasonable to assume that new branches of alternative games might emerge.
-
-\subsubsection{Input}
-A common way of creating an alternative game is to use an unusual input source for controlling the game. This could be by using the position, microphone, special controllers, accelerometer, or something else. Some examples of games utilizing alternative input sources are Knowledge War \citep{wang_knowledge_2016} and CityZombie \citep{zhu_experiences_2010} which both use the players’ position as a central part of playing the game. Exermon \citep{wang_evaluation_2017}, an exercise game, is another example. This game utilizes the accelerometer to register how many repetitions of a strength exercise the user performs correctly.
-
-\subsubsection{Output}
-Output from the game is another characteristic commonly explored in alternative games. Some known examples are sound, haptics, and augmented reality, but there exists a lot more. Unexceptional.net is a game which uses an uncommon output method. It includes a lot of untraditional outputs, such as SMS and phone calls as ways of providing feedback to the player \citep{nideffer_unexceptional_2009}. Another game example is “A pervasive game to know your city better” which utilizes location and augmented reality to show different important landmarks in the area you are located where you are \citep{wu_pervasive_2011}.
-
-\subsubsection{Target group}
-Special target groups (e.g. people with physical disabilities) often require some sort of alternative game to be able to play games at all. For example, deaf people may require extra instructions on the screen and blind people require untraditional ways to interact. A Brain-Computer Interface (BCI) could be a way of bringing games to people that are usually not able to play games. One example is the use of brain waves (via a \href{www.neurosky.com}{NeuroSky} brain set) to control the movement in a Snake game \citep{wang_using_2012}.
-
-\subsubsection{Game genre}
-Computer games are generally categorized as one of eight game genres \citep{prensky_fun_2001}:
-\begin{itemize}
-    \item Action Games
-    \item Adventure Games
-    \item Fighting Games
-    \item Puzzle Games
-    \item Role-Playing Games (RPG’s)
-    \item Simulation Games
-    \item Sports Games
-    \item Strategy Games
-\end{itemize}
-
-However, one may define additional categories for games that do not directly belong to any of these genres. Alternative games often consist of special concepts and uncommon gameplay, hence often falling into other categories than the ones mentioned above. An example of a game that may be hard to categorize is Learning Recycling from playing a Kinect Game \citep{ibanez_learning_2015}.
-
-\subsubsection{Domain}
-Computer games can be divided into different domains, depending on which purpose they have. Some examples of game domains are entertainment, health, and education. Alternative games may sometimes define their own domains.
-
-\subsubsection{Interaction}
-There exists a lot of various interaction forms for games. Examples included cooperation, competition, player vs player (PVP), and more. Interaction can also contain an alternative twist, i.e. interaction forms that are not used in ordinary games. One such concept is the Multiplayer On One Screen Entertainment System (MOOSES) - Players use their own smartphones as controllers for gaming on a shared screen \citep{wang_evaluation_2010}.
-\href{http://www.airconsole.com}{AirConsole} is a game console where this concept is utilized. The console includes multiple MOOSES based games.
+\include{Parts/Prestudy/08DesignAnEnjoyableGame}
+\clearpage
 
 \section{Existing alternative games}
     \subsection{Hold}
-        \begin{figure}
-            \centering
+        \begin{figure}[H]
             \begin{minipage}{.5\textwidth}
               \centering
-              \includegraphics[width=.4\linewidth]{Images/HoldApp.png}
-              \captionof{figure}{A figure}
+              \includegraphics[width=.8\textwidth]{Images/ExistingGames/HoldApp.png}
+              \captionof{figure}{Main timer screen in Hold}
               \label{fig:hold_timer}
-            \end{minipage}%
+            \end{minipage}
             \begin{minipage}{.5\textwidth}
               \centering
-              \includegraphics[width=.4\linewidth]{Images/HoldAppRewards.png}
-              \captionof{figure}{Another figure}
+              \includegraphics[width=.8\textwidth]{Images/ExistingGames/HoldAppRewards.png}
+              \captionof{figure}{Choices of rewards in Hold}
               \label{fig:hold_reward}
             \end{minipage}
         \end{figure}
@@ -75,37 +36,92 @@ There exists a lot of various interaction forms for games. Examples included coo
     Mario Kart Live is a newly developed augmented reality concept from Nintendo (released 16th October 2020). The game is based around the classic Mario Kart game, but with a rather unique twist: the inclusion of a specially designed RC kart that follows the user’s maneuvers in-game. A live video feed from the racing kart is relayed to the user’s Switch, mapping the virtual track to the user’s home \citep{velazco_race_2020}. The game can be played both individually (against AIs) or as a multiplayer game with more than one kart \citep{hashimoto_mario_2020}.
     
     The game is a typical example of how an alternative game can bring something new to an already familiar game concept, by using alternative input and output sources. Below is a screenshot from the game where you can see the karts racing a user’s home and how the game is presented to the player.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{Images/ExistingGames/MarioKartLive.jpeg}
+        \caption{Mario Kart Live poster showing illustrated gameplay}
+        \label{fig:mario_kart_live}
+    \end{figure}
 
-        \includegraphics[width=1.0\textwidth]{Images/MarioKartLive.jpeg}
-        
     \subsection{Pokemon Go}
+    Pokémon Go is an alternative game published and developed by Niantic for iOS and Android. The game was launched in 2016 and quickly became one of the most popular mobile games of all time \citep{grubb_pokemon_2016}. The concept is an extension of the classic Pokémon game found on multiple of Nintendo's handheld devices. 
+
+    \begin{figure}[H]
+        \begin{minipage}{.5\textwidth}
+          \centering
+          \includegraphics[width=.8\textwidth]{Images/ExistingGames/PokemonGoBattle.png}
+          \captionof{figure}{Screenshot of battle in Pokemon Go}
+          \label{fig:pokemon_go_battle}
+        \end{minipage}
+        \begin{minipage}{.5\textwidth}
+          \centering
+          \includegraphics[width=.8\textwidth]{Images/ExistingGames/PokemonGoCatch.png}
+          \captionof{figure}{Typical gameplay screenshot Pokemon Go}
+          \label{fig:pokemon_go_catch}
+        \end{minipage}
+    \end{figure}
+
+    The game concept is similar to the previous Pokémon games but utilizes AR and location determination (GPS) for the player to find and catch Pokémons. Meaning the player needs to move around in the real world to play the game. Battles between Pokémons (to increase combat points and get prices) can happen at specific places known as Pokémon Gyms. These spots correspond to real-world points of interest (POI) such as parks and tourist attractions \citep{bastow_pokestops_2016}. There are also additional important POI in the game, e.g. PokéStops and Nests. Figure \ref{fig:pokemon_go_battle} is an in-game screenshot where you can see a typical Pokémon battle, while figure \ref{fig:pokemon_go_catch} shows a screenshot of gameplay while catching a Pokémon.
     
-    
-    
+    The game is clearly an alternative game as it explores uncommon input and output sources such as camera, GPS, and AR. Pokémon Go is a good example of how alternative games can be very successful. 
     
     \subsection{Just Dance Now}
-        \begin{figure}
-            \centering
+        \begin{figure}[H]
             \begin{minipage}{.5\textwidth}
               \centering
-              \includegraphics[width=.4\linewidth]{Images/JustDanceNow_Pc.png}
-              \captionof{figure}{A figure}
+              \includegraphics[width=.8\textwidth]{Images/ExistingGames/JustDanceNow_Pc.png}
+              \captionof{figure}{Just Dance Now screenshot from PC}
               \label{fig:JustDanceNow_Pc}
-            \end{minipage}%
+            \end{minipage}
             \begin{minipage}{.5\textwidth}
               \centering
-              \includegraphics[width=.4\linewidth]{Images/JustDanceNow_Mobile.jpg}
-              \captionof{figure}{Another figure}
+              \includegraphics[width=.8\textwidth]{Images/ExistingGames/JustDanceNow_Mobile.jpg}
+              \captionof{figure}{Just Dance Now screenshot from Mobile}
               \label{fig:JustDanceNow_Mobile}
             \end{minipage}
         \end{figure}
         
         \subsection{Guitar Hero}
+        Guitar Hero is a series of games originally developed for PlayStation 2 in 2005. The game series later expanded to multiple other game platforms, including Xbox 360 and Nintendo Wii. The game concept is based on simulation and gamification of playing guitar, using a custom-developed guitar controller (see figure \ref{fig:guitar_hero_controller}). The player tries to match the in-game “notes” with buttons on the guitar controller, resulting in a score that is coherent with the number of notes hit. Songs available to choose from vary between different games, but generally, they belong to the genre of rock \cite{noauthor_guitar_2020}. Figure \ref{fig:guitar_hero_screenshot} shows a screenshot example from playing the game in single-player mode. 
+        
+        \begin{figure}[H]
+            \begin{minipage}{.5\textwidth}
+                \includegraphics[width=0.8\textwidth]{Images/ExistingGames/GuitarHeroScreenshot.jpg}
+                \caption{Screenshot from Guitar Hero Gameplay}
+                \label{fig:guitar_hero_screenshot}
+            \end{minipage}
+            \begin{minipage}{.5\textwidth}
+                \includegraphics[width=0.8\textwidth]{Images/ExistingGames/GuitarHeroController.jpg}
+                \caption{Example of Guitar Hero controllers}
+                \label{fig:guitar_hero_controller}
+            \end{minipage}
+        \end{figure}
+        
+        One of the categories of alternative game characteristics is the input. A game using alternative input sources can be classified as an Alternative Game. Guitar Hero is a typical example of such a game because it depends on a custom-designed controller for playing the game.
+        
         \subsection{Wii Fit}
-    
+        
+        Wii Fit is an exergame(exercise-game) by Nintendo that launched in 2007 \citep{imdb_wii_2020}. The game is only available on Nintendo Wii and requires an additional controller in addition to the regular Wii controller. Wii Fit is a collection of minigames that combine the two domains of health and entertainment. The game has four main exercise categories to choose from; strength training, aerobics, yoga, and balance \citep{ign_wii_2008}. Each category has multiple minigames that are made to improve the player’s physical health in that specific category. 
+
+        The additional controller is called the Wii Balance Board \citep{ign_wii_2008} and is one of the categories that makes the game alternative. The board’s purpose is to track the user's movement and translate that to the user’s in-game avatar. The idea behind the board was drawn from the bathroom weight, and it consists of four weight sensors; one in each corner. The controller connects to the console through bluetooth, where it calculates the user's movement in real-time \citep{jacquot_how_2010}. Based on the user’s movement, the game gives feedback on how the exercise is going. 
+        
+        In addition to the alternative input, the game is also a gamification of exercise. The game’s concept is to motivate players to get in shape from the comfort of their own home. The game focuses on providing a wide set of games that are engaging for the entire family. The game tracks all user’s progress and lets them compare themselves with other players. 
+
+        
+        \begin{figure}[H]
+            \begin{minipage}{.5\textwidth}
+                \includegraphics[width=0.8\textwidth]{Images/ExistingGames/WiiFit_Pose.png}
+                \caption{Example of yoga exercise beside in-game avatar.}
+                \label{fig:wii_fit_pose}
+            \end{minipage}
+            \begin{minipage}{.5\textwidth}
+                \includegraphics[width=0.8\textwidth]{Images/ExistingGames/WiiFit_Pushup.jpg}
+                \caption{Screenshot of in-game avatar using the board to track push-ups. }
+                \label{fig:wii_fit_pushup}
+            \end{minipage}
+        \end{figure}
     
     \subsection{Comparison}
-        Insert model here
 
 \section{Technology review}
 

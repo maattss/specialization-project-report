@@ -18,7 +18,7 @@
 \usepackage{appendix}
 \usepackage{chngcntr} % needed for correct table numbering
 \usepackage[
-    colorlinks=true, 
+    colorlinks=true,
     linkcolor=black,
     anchorcolor=black,
     citecolor=black,
@@ -138,48 +138,45 @@
 \listoftables}
 
 \newpage
-\addtocontents{toc}{\protect\setcounter{tocdepth}{4}} % sets depth of toc to 4, 1.1.1.1
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}} % sets depth of toc to 4, 1.1.1.1
 \pagenumbering{arabic} % Starting arabic page numbering
 \setcounter{page}{1} % sets pagecounter to 1
 
 \vspace*{6\baselineskip}
 \part{Introduction} % section/chapter name
-\label{part:introduction}
-    This part introduces the topic of the project and its main purpose. A brief description of our motivation for choosing this task and why we found it interesting will be given. Because the project utilizes the Goal, Question, Metrics approach to define the research value of the project, an overview of these will also be presented. Lastly, an outline of the content will be shortly described to give the reader a brief overview of what’s included in this report.
-    \clearpage % clears the page after the introduction is finished
-    \subfile{Parts/01Introduction} % including the subfile for the chapter
-\clearpage % clears the page after the chapter is finished
+\label{part:introduction} % chapter label
+\subfile{Parts/1Introduction/IntroductionBase} % including the subfile for the chapter
 
 \vspace*{6\baselineskip}
 \part{Prestudy}
 \label{part:prestudy}
-    This is the part of the report where we will present the literature study piece of the project. It starts with explaining what an alternative game is, by listing some common characteristics together with examples of existing ones. After that, a technology review of possibilities in this field today will be given. In the end, some guidelines and approaches on what is important when designing a game (how to make it enjoyable) will be presented.
-    \clearpage
-    \subfile{Parts/02Prestudy}
-\clearpage
+\subfile{Parts/02Prestudy}
 
 \vspace*{6\baselineskip}
-\part{Own contribution}
-\label{part:contrubution}
+\part{Our contribution}
+    Introduction
+    \clearpage
+    \label{part:contribution}
     \subfile{Parts/03OurContribution}
 \clearpage
 
 \vspace*{6\baselineskip}
 \part{Discussion \& Conclusion}
-\label{part:discussion}
+    Introduction
+    \clearpage
+    \label{part:discussion}
     \subfile{Parts/04Discussion}
 \clearpage
 
 \newpage
 \renewcommand\refname{References} % name for the reference list
 {\setstretch{1.0} % linespacing for the references
-\addcontentsline{toc}{section}{References} % to change the name of the references in the TOC
-%\begin{thebibliography}{99} Trengs denne Siri?
-\bibliography{references.bib} % adds the references to the document
-%\end{thebibliography}
+\addcontentsline{toc}{section}{References} % change references name in the TOC
+\bibliography{references.bib} % adds references to the document
 }
 
 
+% Uncomment to add Appendix
 %\newpage
 %\renewcommand{\appendixpagename}{Appendix} % Heading of appendix
 %\renewcommand{\appendixtocname}{Appendix} % name of appendix in TOC
