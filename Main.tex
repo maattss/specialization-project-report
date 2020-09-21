@@ -142,6 +142,7 @@
 \pagenumbering{arabic} % Starting arabic page numbering
 \setcounter{page}{1} % sets pagecounter to 1
 
+% ----- Parts -----
 \vspace*{6\baselineskip}
 \part{Introduction} % section/chapter name
 \label{part:introduction} % chapter label
@@ -150,24 +151,19 @@
 \vspace*{6\baselineskip}
 \part{Prestudy}
 \label{part:prestudy}
-\subfile{Parts/02Prestudy}
+\subfile{Parts/2Prestudy/PrestudyBase}
 
 \vspace*{6\baselineskip}
 \part{Our contribution}
-    Introduction
-    \clearpage
-    \label{part:contribution}
-    \subfile{Parts/03OurContribution}
-\clearpage
+\label{part:contribution}
+\subfile{Parts/3OurContribution/OurContributionBase}
 
 \vspace*{6\baselineskip}
 \part{Discussion \& Conclusion}
-    Introduction
-    \clearpage
-    \label{part:discussion}
-    \subfile{Parts/04Discussion}
-\clearpage
+\label{part:discussion}
+\subfile{Parts/4Discussion/DiscussionBase}
 
+% ----- References -----
 \newpage
 \renewcommand\refname{References} % name for the reference list
 {\setstretch{1.0} % linespacing for the references
@@ -175,8 +171,7 @@
 \bibliography{references.bib} % adds references to the document
 }
 
-
-% Uncomment to add Appendix
+% Appendix
 %\newpage
 %\renewcommand{\appendixpagename}{Appendix} % Heading of appendix
 %\renewcommand{\appendixtocname}{Appendix} % name of appendix in TOC
