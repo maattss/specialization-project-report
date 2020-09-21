@@ -1,5 +1,6 @@
 \documentclass[../Main.tex]{subfiles}
 \begin{document}
+\label{appendix}
 
 % The next for lines makes sure numbering in the appendix is correct - DO NOT CHANGE
 \renewcommand{\thesubsection}{A\arabic{subsection}}
@@ -7,14 +8,17 @@
 \counterwithin{table}{subsection}
 \counterwithin{figure}{subsection}
 %--------------------------------------------------------------
-
-\subsection{Test}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.2\columnwidth]{Images/ntnulogo.png}
-    \caption{NTNU logo}
-    \label{fig:ntnulogo}
-\end{figure}
+\subsection{Alternative categories and characteristics}
+\label{appendix:complete_model}
+\begin{table}[H]
+    \begin{tabular}{lll}
+        test & test & test \\
+        test & test & test \\
+        test & test & test
+    \end{tabular}
+    \caption{Alternative games characteristics and categories}
+    \label{tab:alt_games_complete}
+\end{table}
 
 \biblio % Needed for referencing to working when compiling individual subfiles - Do not remove
 \end{document}
