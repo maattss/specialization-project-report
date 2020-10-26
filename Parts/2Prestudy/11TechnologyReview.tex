@@ -3,50 +3,106 @@
 
 \section{Technology Review}
 \label{chap:technology_review}
+In this chapter, we will study technology relevant to the development of alternative games. The study will increase our understanding of the possibilities in this field. The learning will come in handy when we are going to invent new alternative game concepts, but also later when we are going to develop our chosen concept.
+
+The diversity of alternative games today is large. Based on our definition from Chapter \ref{chap:what_is_alternative} a lot of games can be categorized as alternative. A few examples were given in Chapter \ref{chap:existing_games}, but many more exist. Because there are numerous unique alternative game concepts, there are also a lot of variations in the technology they use. Thus covering everything is outside the scope of this project. Our decision is therefore to focus on the type of technology that is directly relevant to us. As described in our motivation, in Chapter \ref{chap:motivation} our goal is to create an application that can reach as many users as possible. As a consequence of this, we will mainly consider mobile development tools. However, we will first briefly take a look at the possibilities of technology that alternative games explore today.
 
 \subsection{Diversity in Alternative Game Technology}
 % Probably should wrap this figure
-\begin{figure}[H]
-    \includegraphics[width=0.8\textwidth]{Images/TechnologyReview/SingstarController.jpg}
+%\begin{figure}[H]
+    %\includegraphics[width=0.8\textwidth]{Images/TechnologyReview/SingstarController.jpg}
+    %\centering
+    %\caption{Singstar controller}
+    %\label{fig:singstar}
+%\end{figure}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \includegraphics[width=0.4\textwidth]{Images/TechnologyReview/SingstarController.jpg}
     \centering
-    \caption{Singstar controller}
-    \label{fig:singstar_controller}
+    \caption{Singstar microphones}
+    \label{fig:singstar}
+    \vspace*{-1\baselineskip}
+\end{wrapfigure}
+
+The technology used in alternative games can in principle consist of almost anything. The limits in what can be done are often affiliated with the imagination of the game developers rather than the technology. A common way of creating alternative games, as described in the model in Chapter \ref{chap:what_is_alternative} is to explore custom-designed input or output devices. A typical example is a specific controller custom-designed for the game. Alternative games often bundle the game together with the needed controller. A concrete example of such a game is Singstar, a karaoke game where players compete in trying to get the highest score by hitting as many notes as possible. The game includes a custom microphone, as seen in Figure \ref{fig:singstar}, that the players use when singing. By using this microphone, the player gets an increased real-world experience. Some other examples of games that use custom controllers as input are Wii Fit, Guitar Hero, and Mosquito Mania, all of which were described in Chapter \ref{chap:existing_games}. 
+
+Augmented Reality (AR) and Virtual Reality (VR) are examples of technologies where uncommon input and output are used. The technologies have become increasingly popular in the last couple of years, and are expected to continue to be available to more people in the coming years as well \citep{petrock_us_2020}. Both technologies are great platforms for developing alternative games.
+
+VR is a technology based on simulating an environment for users where they become a part of that virtual experience. The environment could be based around a simulated version of the real world or an imaginary one. VR games give another level of immersion in the game because everything the user sees is based on the imaginary environment. Consequently, more parts of the game experience can be controlled by the developer. An example of a player immersed in a VR game can be seen in Figure \ref{fig:playing_vr}. The corresponding in-game look for the player could be similar to the view in Figure \ref{fig:gameplay_vr}. This is an actual game-play from “The Climb” for Oculus Quest, a popular VR headset.
+
+\begin{figure}[H]
+    \begin{minipage}[t]{.52\textwidth}
+         \includegraphics[width=0.84\textwidth]{Images/TechnologyReview/OculusQuest.jpg}
+        \centering
+        \caption{A person playing VR games using Oculus Quest 2.}
+        \label{fig:playing_vr}
+    \end{minipage}
+    \hspace{0.05\textwidth}
+    \begin{minipage}[t]{.43\textwidth}
+        \includegraphics[width=0.8\textwidth]{Images/TechnologyReview/TheClimbOculus.jpg}
+        \centering
+        \caption{Gameplay screenshot from the Oculus game The Climb.}
+        \label{fig:gameplay_vr}
+    \end{minipage}
 \end{figure}
 
-\subsection{Mobile Application Development Tools}
+AR is similar to VR, but instead of projecting elements to a simulated environment, AR uses the real world. This could be obtained using specially developed glasses, as illustrated in Figure \ref{fig:ar_glasses}, or more commonly, using the screen and camera of a mobile phone. Similarly to VR, AR creates another game experience than regular games. One of the most common examples of an AR game is Pokémon Go, which was described in Chapter \ref{chap:existing_games}.
+
 \begin{figure}[H]
     \includegraphics[width=0.8\textwidth]{Images/TechnologyReview/ARGlasses.jpeg}
     \centering
-    \caption{Ar glasses}
-    \label{fig:ar}
+    \caption{AR projections in the real world using glasses.}
+    \label{fig:ar_glasses}
 \end{figure}
 
-\begin{figure}[H]
-    \begin{minipage}[t]{.55\textwidth}
-         \includegraphics[width=0.84\textwidth]{Images/TechnologyReview/OculusQuest.jpg}
-        \centering
-        \caption{Oculus quest}
-        \label{fig:oculus}
-    \end{minipage}
-    \hspace{0.05\textwidth}
-    \begin{minipage}[t]{.45\textwidth}
-        \includegraphics[width=0.8\textwidth]{Images/TechnologyReview/TheClimbOculus.jpg}
-        \centering
-        \caption{The climp}
-        \label{fig:theclimb}
-    \end{minipage}
-\end{figure}
+In addition to using custom controllers, AR, and VR, mobile phones are commonly used in the development of alternative games. Mobile devices have a lot of sensors that developers can utilize in game development. Also, the distribution of mobile applications is fairly simple because the popular operating systems have pre-made tools for distributing applications. The simplicity of distribution makes it more likely for users to download an application to their mobile phone than they are to buy some kind of custom device only for that game.
+
+As mentioned in the motivation, we have focused on developing a concept that can reach as many users as possible. Mobile technology is by far the easiest and most available way to do this today. The rest of this technology review will therefore focus on which tools can be utilized to create the best mobile applications. The content that will be presented in the rest of the chapter is used later to decide how we are going to develop our application.
+
+\subsection{Mobile Application Development Tools}
+Most smartphones on the market today use one of the two operating systems Android and iOS \citep{statcounter_mobile_2020}. The development for these can be done mainly in two different ways: native or using a cross-platform framework. The native development method uses the APIs and languages provided by Apple or Google. The cross-platform framework method uses 3rd party tools for creating an application that can be run on both platforms. There are strengths and weaknesses by using either of the approaches which should be carefully considered before choosing one of them. Early decisions affect evolvability and can be hard or costly to change later \citep{ford_building_2017}. 
+
+Alternative games often utilize the mobile phone’s sensors, such as GPS, Bluetooth, and gyroscope, as a central aspect of the game. It is, therefore, essential that the frameworks considered for alternative games have good support for accessing data from these sensors. This is not an issue in the native approach since they always are up to date with the latest and most detailed data available to the developer.
 
 \subsubsection{Native Solutions}
+The obvious drawback of using the native approach is that the application for Android and iOS needs to be developed separately. Since the native solutions for Android and iOS are based on two different programming languages, Java and Swift, code cannot be shared between both applications. The developers then have to implement and maintain both solutions, resulting in “double” the amount of work.
+
+The main strength of the native solution is that you always have access to the latest and greatest APIs provided by the companies developing the operating systems. Every time a new OS gets released the developers have access to the new features instantly. This can be valuable for developers when working with special features that are not commonly utilized and will create a faster implementation loop when new features become available.
+
+Another strength of the native solution is maturity. The APIs and tools provided are usually well documented and tested. When developing an application using this approach is not dependent on third-party developers writing documentation and updating their framework. 
+
+If performance is critical for the application, the native approach is also preferred. While the performance of different frameworks varies significantly, based on what operations are done, native solutions are usually more performant than cross-platform frameworks \citep{biorn-hansen_empirical_2020}.
+
 \subsubsection{Cross-platform solution}
+The other main solution is using a cross-platform framework. There are several variants of cross-platform solutions for mobile applications each with different strengths and weaknesses. In this section, we will consider general-purpose and game-focused frameworks. The primary benefit of all of these approaches is the ability to share codebase between the Android and iOS applications. In theory, this should decrease development and maintenance costs, since the developers can focus on only one framework. Another benefit of using cross-platform solutions is that they often utilize other languages than the ones supported by Google and Apple. This means that you can choose a framework that fits better with the developers’ expertise.
+
+General cross-platform frameworks focus on being able to create a simple application that can run on both Android and iOS. The different frameworks have their own approach, but they provide similar services. Three of the most known frameworks are React Native, Flutter, and Xamarin. When deciding on which general-purpose framework one should choose, the developer preferences are often central. But of course, it is necessary to make sure the framework has support for what you plan to do in the application. General cross-platform application frameworks are good for the majority of applications that do not include too much complicated graphics.
+
+Game focus mobile framework focuses more directly on creating applications with 3D elements. The frameworks provide tools that make the creation of game elements and complex visualization easier. Thus they are perfect when working with this. However, they might be unnecessarily complex and not fit for developing applications that are simpler graphically. Two of the best-known examples of game focused mobile frameworks are Unity and Unreal Engine.
+
 \subsubsection{Choosing Between Native and Cross-platform}
+So whether a native approach or a cross-platform approach is best essentially comes down to the situation. If performance and access to the latest and greatest the operating system can offer, a native solution is preferable. If a shared codebase between Android and iOS or minimizing development time is crucial, a cross-platform solution is probably the way to go. And last, if you are developing 3D intensive applications, a game-specific framework should be the preferred option.
 
 \subsection{Data Solutions}
+An important aspect of game development is how the data should be stored and managed. The social aspect in games is crucial to create an enjoyable experience for the player \citep{sweetser_gameflow_2005}. A way of authenticating users and a central storing mechanism to keep player data is essential to provide this. There are many approaches to do this. 
+
+Previous to cloud services, writing a custom API that handled requests was the way to go. However, in the last couple of years, cloud service solutions called Backend as a Service (BaaS) are frequently used in mobile applications. The idea here is that the solution should provide all necessary backend solutions for mobile applications. All the big cloud providers, Microsoft, Google, and Amazon, offer this kind of service.
+
 \subsubsection{Backend as a Service (BaaS)}
+As mentioned above BaaS is a tool providing all the necessary backend services for a mobile application. This includes authentication, storage, insights, and more. Such a solution is supposed to simplify the development of a mobile application since the developers do not need to spend much energy on planning, creating, and maintaining a custom backend. They can rather focus on improving the application instead, All the big cloud providers, Microsoft, Google, and Amazon, offer similar kinds of services with Azure Mobile Apps, Firebase, and AWS Amplify respectively. Choosing between these is usually subjected to taste and preferences, but the technology chosen for the mobile application could influence the choice. For example, if Xamarin is used as a mobile application tool, Azure Mobile Apps is a great fit. They are both provided by Microsoft and consequently, the developer gets a lot “for free”.
+
+In addition to the solutions from the big cloud service providers, there exist other alternatives that could be used as a replacement or extension. Two of the ones that caught our interest during this work are Parse and Hasura. Parse is an open-source backend framework. It aims to create an easier backend development process and has a large community base. Parse could be a great alternative to Azure Mobile Apps, Firebase, or AWS Amplify. Hasura is a more specialized database solution. The service provides a PostgreSQL database with a GraphQL API and built-in authentication. The main selling point for Hasura is the use of GraphQL, as opposed to the more common REST style. The main benefit of using GraphQL is the ability to specify which data properties you want to fetch, which limits the amount of data transferred, and thus is perfect for mobile applications. Hasura is not a complete BaaS and therefore probably needs to be used in coherence with another service.
+
 \subsubsection{Custom API}
+The next approach for creating a backend solution is to write a custom API. This is a very common solution and was for a long time the preferred one for almost all client-server based applications. By creating a custom API the developer is able to tailor the system for the application’s needs. Using a custom It is also simpler to integrate a custom API with an existing system if that is a requirement. 
+
+There exist a large diversity of different frameworks for creating a custom API. In general, all major languages have at least one tool for developing a web API. Examples of some tools are Flask in Python, ASP.NET in C\#, and Express in Node.js.
+
 \subsubsection{Choosing between BaaS and a Custom API}
+The choice of backend solutions often depends on the developers’ preferences. If the goal of the application is to create something that does not require a lot of business logic and complex backend, the BaaS is probably the way to go. For larger companies where the backend needs to integrate with the existing system and contain complex logic, a custom API may be the best solution. 
 
 \subsection{Summary}
+In this chapter, we have taken a quick look at the diversity in technology that is used in alternative games today. Relevant mobile application development tools have been discussed and compared. The knowledge obtained from this chapter will be useful when deciding on how the application should be developed later in Chapter \ref{chap:chosen_tech} when we will choose what to use for developing our game concept.
 
 \biblio % Needed for referencing to working when compiling individual subfiles - Do not remove
 \end{document}
