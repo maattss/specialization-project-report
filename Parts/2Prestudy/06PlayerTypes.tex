@@ -1,12 +1,106 @@
 \documentclass[../Main.tex]{subfiles}
 \begin{document}
 
-\section{Player types}
+\section{Player Types}
 \label{chap:playertypes}
 
-Players can have very different interests for playing. Consequently, it is therefore important to consider these interests when designing games. This chapter present \citeauthor{hamari_player_2014}(\citeyear{hamari_player_2014}) on player types
+Understanding player types and motivations are essential for designing games. This is because changes in game business practices have elevated the need for distinguishing player types and player styles, similar to how segmentation is used in marketing. Players can have very different interests in playing, which are important to consider when designing games. This chapter presents \citet{hamari_player_2014}, a study of player types. Hamari and Tuunanen perform an author-centric literature search on player topologies. Then they proceed with a concept-centric approach where they synthesize repeating dimensions of player topology. 
 
-\citet{bartle_hearts_1996}
+The use of segmentation has always been a central part of marketing practices. This practice implies that products are designed with certain end-users in mind as opposed to mass-marketing. The goal of segmentation is to identify customers that are as homogeneous as possible, to offer products that better match their needs. In general, there are four categories of segmentation that are established in marketing theory; geographic, demographic, psychographic, and behavioral segmentation. \textit{Geographic} segmentation divides people into groups based on the region they live or work in. \textit{Demographic} segmentation divides people into groups based on descriptive features such as age, gender, occupation, and education. \textit{Psychographic} segmentation divides people based on personal traits, such as attitude, interests, lifestyle, and values. And, \textit{Behavioral} segmentation categorizes people into groups based on behavioral patterns observed in people.
+
+Out of the four categories, geographic and demographic segmentation have not been of primary interest, due to their irrelevance to game design. However, there exist studies that address these interests, like \citet{williams_looking_2009}, that found demographic differences in gender roles and behavior. Geographic segmentation is also used in games where it sometimes makes sense to let people from the same region, country, or continent play on the same server because of language barriers \citep{royce_massively_2015}. \citet{hamari_player_2014} explicitly states that their review attempts to conceptualize motivations, behavior, and traits that categorize within the psychographic and behavioral segments. The two segmentation categories are oftentimes challenging to distinguish, and \citet{hamari_player_2014} states that the literature interprets these differently. The game genres covered in \citet{hamari_player_2014} vary, however, Massive Multiplayer Online(MMO) games are more recurring than others. The authors express that this may be problematic for the generalizability of the reviewed literature.
+
+
+\subsection{Bartle’s Four Player Types}
+
+\citet{bartle_hearts_1996} is one of the papers that \citet{hamari_player_2014} refers to. Bartle's studies on player types are based on observations in player behavior in Multi-User Dungeons (MUDs). Through his observations, he created a two-dimensional model for which he states that there exist four player types; one for each quadrant. The model’s two dimensions to playing are action vs. interaction, and player-orientation vs. world-orientation. Based on players’ position on the axes, one can distinguish players into the four player types; Achievers, Explorers, Killers, and Socializers. Figure \ref{fig:bartle_playertypes} illustrates these axes and the belonging player types. An Achiever is a player that prefers world-oriented actions, to achieve measurable rewards like points. An Explorer is a player that prefers interaction in the game world, like discovering new areas. A Killer is a player that prefers action towards other players and thrives on competition. And, a Socializer is a player that prefers interaction with other players, over the game itself.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Theory/bartle_playertypes.jpeg}
+    \caption{Bartle’s player type model.}
+    \label{fig:bartle_playertypes}
+\end{figure}
+
+
+
+Although Bartle’s model on player types is insightful, it has received criticism for being too generalizing and simplifying, and not valid for all game types. According to \citet{hamari_player_2014}, the criticism of \citet{bartle_hearts_1996} is based on the notion that people's behavior and motivation may change in time, hence, making it difficult to pinpoint a player’s player type. 
+
+\citet{hamari_player_2014} also points out another central point of criticism: Bartle’s categories are clear-cut and do not consider that players may have multiple motivations for playing. The categories do not take into account that the dimensions can be used as scales rather than nominal categories. \citet{hamari_player_2014} emphasizes that this criticism stems from how the topologies have been used, and not from the content of the categories themselves.
+
+
+\subsection{Yee’s Achievement, Social, and Immersion}
+
+\citeauthor{hamari_player_2014} point also refers to the work of \citet{yee_motivations_2007}. \citet{yee_motivations_2007} observes player motivations of MMORPGs, and builds on \citet{bartle_hearts_1996}. \citet{yee_motivations_2007} suggest that there are three main motivational factors of motivation, with sub-factors.
+
+\begin{enumerate}
+    \item Achievement 
+        \begin{enumerate}
+            \item \textbf{Advancement:} Progress, power, accumulation, status. 
+            \item \textbf{Mechanics:} Numbers, optimization, templating, analysis. 
+            \item \textbf{Competition:} Challenging others, provocation, domination. 
+        \end{enumerate}
+    \item Social 
+        \begin{enumerate}
+            \item \textbf{Socializing:} Casual chat, helping others, making friends. 
+            \item \textbf{Relationship:} Personal, self-disclosure, find, and give support. 
+            \item \textbf{Teamwork:} Collaboration, groups, group achievements. 
+        \end{enumerate}
+    \item Immersion
+        \begin{enumerate}
+            \item \textbf{Discovery:} Exploration, lore, finding hidden things. 
+            \item \textbf{Role-playing:} Storyline, character history, roles, fantasy. 
+            \item \textbf{Customization:} Appearances, accessories, style, color schemes. 
+            \item \textbf{Escapism:} Relax, escape from reality, avoid real problems.
+        \end{enumerate}
+\end{enumerate}
+
+Yee’s underlying facets of Achievement and Social have some resemblance to Bartle’s heuristics found in Achievers, Explorers, and Socializers, however, they are not perfectly comparable. Moreover, Bartle did not consider Immersion explicitly, while \citep{yee_motivations_2007} found that immersion was a major motivational factor for players.
+
+Previous work of Yee stated that the achieving type also includes the wish to gain power \citep{yee_facets_2002}. This could be players trying to accumulate as much gear as possible or trying to do as much damage to others, leading to the underlying desire of feeling powerful. The behavior \citet{yee_facets_2002} describes later developed to the achiever subfactor \textit{competition}, that included challenging others, provocation, and domination \citep{yee_motivations_2007}. 
+
+\citet{zackariasson_virtual_2010} player types also address power and domination and build on Yee’s model on motivational factors and identity construction. The topology that \citet{zackariasson_virtual_2010} is based on leads to six dimensions, namely progress \& provocation, power \& domination, helping \& support, friends \& collaboration, exploration \& fantasy, and story \& escapism. The first two stem from Yee’s Achievement subfactors advancement and competition, the third and fourth stem from Yee’s Social, and the two last to Yee’s Immersion (see list above). Because it builds on Yee’s model, there are clear similarities between Yee's and Bartle’s types.
+
+
+\subsection{Intensity}
+
+In previous literature, players have often been divided into hardcore and casual players. Some papers choose to treat the categorization as a separate segment \citep{ip_segmentation_2005}, whereas some address it in a more comprehensive player type model. \citeauthor{hamari_player_2014} states that opposed to casual players, hardcore players are more dedicated, have significant knowledge, play longer sessions, and spend more time on game-related forums. \citet{ip_segmentation_2005} suggests there are significant differences between the two groupings, and that game designers should consider attitude vs. experience when developing. However, like the criticism of \citet{bartle_hearts_1996}, this binary grouping has also received criticism for being too simplistic. The divisions of hardcore and casual players seem not to be black and white and create implausible speculations on the player type’s intensity, experience, and attitude towards the game. A suggestion is to define it as a continuum of engagement, where players are placed by their willingness to participate, make effort, and pay \citep{hamari_player_2014}.
+
+
+\subsection{In-game Demographics}
+
+Game mechanics are useful in game design because they can trigger emotions that cause certain behavior \citep{lazzaro_four_2008}. This behavior gives useful data on the players’ preferences that affect the segments that are formed within the game. \citet{hamari_game_2010} suggests there is a two-dimensional segmentation for in-game demographics. The vertical axis describes the character’s progress, such as progress in games. This axis relates to gaming intensity and the player’s motivation for progress.
+The horizontal axis represents the avatar classes the game provides, such as wizards and blacksmith. The two-dimensional segments combine these two, and users are segmented based on their progress and their role. Examples of this can be different levels of avatar classes, in-game professions, amateur vs professional, and position in the hierarchy. Players can for instance pursue to upgrade their avatar from warrior to king as they progress the game. 
+
+
+\subsection{Hamari and Tuunanen’s Reasoning}
+
+\citet{hamari_player_2014} review on player topologies are surprisingly uniform and suggest that there are correlations between the papers. The papers indicate that the results can be summarized as seven dimensions, listed below. Each dimension has related keywords that are recurring in the literature.
+
+\begin{enumerate}
+    \item \textbf{Achievement:} Achiever, Single-oriented player, Guardian/Achiever, Aggressive gamer, Achievement, Progress \& provocation, Power \& domination, Runner, Hard fun, Casual, Avatar level, (Semi-)professional.
+    
+    \item \textbf{Exploration:} Explorer, Solver, Rational/Explorer, Aggressive gamer, Social gamer, Immersion, Exploration \& Fantasy, Story \& escapism, Curiosity.
+    
+    \item \textbf{Sociability:} Socialiser, Social mentalities, Community-oriented player, Idealist/Socialiser, Social, Helping \& support, the people factor, Friends \& Collaboration, (Semi-)professional, Amateur.
+    
+    \item \textbf{Domination:} Killer, Artisan/Killer, Aggressive gamer, Off-real world-oriented player, Progress \& provocation, Power \& domination, Casual.
+    
+    \item \textbf{Immersion:} Immersion, Committed mentalities, Exploration \& fantasy, Story \& escapism, Off-real world-oriented player, altered states, Hardcore.
+    
+    \item \textbf{Gaming Intensity and skill:} Hardcore, Committed mentalities, Aggressive gamer, Veteran, Casual, Casual mentalities, Inactive gamer, Pacifist, Avatar level, Amateur.
+    
+    \item \textbf{In-game demographics:} Avatar class and profession, non-clan member, Amateur, (Semi-)professional, Group centrality, Size of the guild, Type of server, Faction.
+\end{enumerate}
+
+Their findings show that these segments are recurring across the reviewed literature, and can be applied to different game types. Though the papers are not directly comparable, because of different scope, Hamari and Tuunanen’s concept-centric approach suggest that the results can be synthesized into the five key dimensions of player motivations and two supporting dimensions. Achievement, Sociability, Exploration, Domination, and Immersion are the five key dimensions, and game intensity and in-game demographics are the supporting dimensions. The reasoning behind this seems to be pertaining to the motivation of play. Achievement and Sociability seem to be the most recurring concepts in the literature; Immersion and Domination appear in some papers; whereas in-game demographics were only found in a few papers.
+
+Though most of the player topologies have been built on observations of MUDs, MMORPGs, and other online games, the topologies seem to be relevant for various game types. The results can for instance be applied in the context of gamification, where game mechanics related to sociability and achievements are frequently used.
+
+
+\subsection{Summary}
+This chapter has introduced different interpretations of player types. We looked at the recurring ideas that are present in relevant literature and have concretized them into seven primary dimensions. It is crucial to understand that players have different needs and motivations for playing when designing games. Additionally, different genres may include particular players types. The dimensions and understandings from this chapter will be useful later for developing new game concepts, and for the final game design.
+
 
 \biblio % Needed for referencing to working when compiling individual subfiles - Do not remove
 \end{document}
