@@ -25,7 +25,7 @@
     filecolor=black,
     menucolor=black,
     runcolor=black,
-    urlcolor=blue
+    urlcolor=black
     ]{hyperref}
 \counterwithin{table}{section} % numbering of tables 
 \counterwithin{figure}{section} % numbering of figures
@@ -76,10 +76,14 @@
 
 
 % ----- Sources -----
-\usepackage{natbib}
-\bibliographystyle{apaeng} % citation and reference list style
-\def\biblio{\clearpage\bibliographystyle{apaeng}\bibliography{references.bib}} % defines the \biblio command used for referencing in subfiles - DO NOT CHANGE
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite} % citation and reference list style
+\def\biblio{\clearpage\bibliographystyle{apacite}\bibliography{references.bib}} % defines the \biblio command used for referencing in subfiles - DO NOT CHANGE
 
+% old citation style
+%\usepackage{natbib}
+%\bibliographystyle{apaeng} % citation and reference list style
+%\def\biblio{\clearpage\bibliographystyle{apaeng}\bibliography{references.bib}} % defines the \biblio command used for referencing in subfiles - DO NOT CHANGE
 
 % ----- Header and footer -----
 \pagestyle{fancy}
@@ -166,7 +170,7 @@
 % ----- References -----
 \newpage
 \renewcommand\refname{References} % name for the reference list
-{\setstretch{1.0} % linespacing for the references
+{\setstretch{1.2} % linespacing for the references
 \addcontentsline{toc}{section}{References} % change references name in the TOC
 \bibliography{references.bib} % adds references to the document
 }

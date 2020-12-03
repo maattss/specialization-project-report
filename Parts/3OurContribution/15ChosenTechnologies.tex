@@ -24,7 +24,7 @@ Prior knowledge of a tool counts positive because it will increase the developme
 
 Based on the selection criteria described above, we have selected React Native as a mobile application framework and Firebase as a BaaS provider.
 
-\subsection{React Native as a Mobile Development Framework}
+\subsection{React Native as Mobile Development Framework}
 React Native is a cross-platform framework developed by Facebook introduced at React.js Conf, in 2015 \citep{occhino_react_2015}. The framework’s primary goal is to write applications that can run on both iOS and Android. One of the main differences between React Native and other cross-platform frameworks is its use of native components. For example, a button declared in a React Native application will be presented as an Android-type button when the application is run on Android and an iOS-type button when it is used on iOS. Most other frameworks have a different approach where the application provides a common experience for Android and iOS applications. In this way, a React Native application feels more like a native application than other frameworks such as Flutter and Ionic. As described in the section above, we had three main criteria when choosing React Native: maturity, support for required functionality, and previous experience.
 
 \textbf{Maturity:} 
@@ -51,7 +51,6 @@ Firebase has support for the backend tools needed to develop Hover, such as auth
 Firebase was the only BaaS we had some prior knowledge of. Even though our experience is not extensive, we have experience with some of Firebase’s fundamental parts. 
 
 The criteria valued the most in this decision was the previous experience. Both of us had some prior knowledge of Firebase. After doing some research, it seems like there are also more tools created for Firebase in React Native than any of the other services providers. Even though we chose Firebase, AWS Amplify, or Azure Mobile apps could also have been good alternatives.
-
 
 \subsection{Testing the technologies in a quick prototype}
 To make sure that the connection between Firebase and React Native, and other related important libraries we are going to use, are working as expected, we have developed a prototype in parallel with writing this chapter. The prototype includes a mobile application written in React Native, communicating with a database in Firebase. We have implemented a simple map in the explore-view centered on the user’s location and authentication. Functionality such as geo-fencing, fetching from database or storage, and game ideas have not yet been prototyped. In this way, we have tested the essential parts required for the game setup. Figure \ref{fig:concept_explore_view} in Chapter \ref{chap:game_design} show a screenshot of the explore-view and Figure \ref{fig:authentication} below show a screenshot of the authentication view from the prototype.
