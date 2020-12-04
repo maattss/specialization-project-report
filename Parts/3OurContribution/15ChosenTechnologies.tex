@@ -4,12 +4,13 @@
 \section{Chosen Technologies}
 \label{chap:chosen_tech}
 Deciding which technologies we will use when developing our chosen game concept, Hover, is an essential consideration in the project. In this chapter, a description of the selection process and the chosen technologies will be presented. 
-Selection Process
+
+\subsection{Selection Process}
 Chapter \ref{chap:technology_review} presents an overview of relevant technology. The theory presented here will be used as a basis for selecting technology for developing our concept, Hover. Because Hover is based on the mobile platform, there are essentially two main technology choices we need to undertake: Decide which mobile application development approach and which backend solution approach we want to use. After some discussion, we have decided to choose a cross-platform framework for developing the mobile application and a Backend as a Service (BaaS) solution for managing data, users, and analytics.
 
 Our main reason for choosing a cross-platform framework instead of the native approach for mobile development is justified based on the possible target group. As explained earlier, in our motivation for doing this project, we want to create a game that can reach as many users as possible. By choosing a cross-platform mobile framework, we can create an application that reaches both Android and iOS users. Additionally, developing a game that runs on Android and iOS increases the number of possible test participants — making it easier for us to construct an appropriate test group when testing and evaluating our game. As long as the framework exposes the possibilities we need, there are little downsides to using such a tool.
 
-When choosing our backend solution approach, the main concern was simplicity. We want to maximize the time spent on developing the actual game and increase the functionality available. It is crucial that the realization of the concept is as complete as possible before testing the game to get a proper evaluation of it. The development time in the master thesis period is limited. Thus, spending much time on a complex backend architecture may be less beneficial for creating a fair evaluation of the game concept.
+When choosing our backend solution approach, the main concern was simplicity. We want to maximize the time spent on developing the actual game and increase the functionality available. It is crucial that the realization of the concept is as complete as possible before testing the game to get a proper evaluation of it. The development time in the master’s thesis period is limited. Thus, spending much time on a complex backend architecture may be less beneficial for creating a fair evaluation of the game concept.
 
 After choosing the main mobile development and backend approach, we focus on choosing specific tools we want to utilize. When selecting the cross-platform mobile application framework and the BaaS solution, we used three main evaluation criteria:
 
@@ -22,7 +23,7 @@ An essential aspect is that central functionality is possible to develop. The ch
 \textbf{Previous experience: }
 Prior knowledge of a tool counts positive because it will increase the development speed. While it is always fun to try out new technologies as a developer, some previous experience is preferable. This project’s main goal is to invent, develop, and test a game concept, and thus it is essential that the game is well implemented.
 
-Based on the selection criteria described above, we have selected React Native as a mobile application framework and Firebase as a BaaS provider.
+Based on the selection criteria described above, we have selected \textit{React Native} as a mobile application framework and \textit{Firebase} as a BaaS provider. 
 
 \subsection{React Native as Mobile Development Framework}
 React Native is a cross-platform framework developed by Facebook introduced at React.js Conf, in 2015 \citep{occhino_react_2015}. The framework’s primary goal is to write applications that can run on both iOS and Android. One of the main differences between React Native and other cross-platform frameworks is its use of native components. For example, a button declared in a React Native application will be presented as an Android-type button when the application is run on Android and an iOS-type button when it is used on iOS. Most other frameworks have a different approach where the application provides a common experience for Android and iOS applications. In this way, a React Native application feels more like a native application than other frameworks such as Flutter and Ionic. As described in the section above, we had three main criteria when choosing React Native: maturity, support for required functionality, and previous experience.
@@ -42,9 +43,9 @@ Although we chose React Native as our development framework, other frameworks su
 Firebase is a Backend as a Service solution provided by Google. The service was launched as a separate company back in 2011 and bought by Google in 2014 \citep{tamplin_firebase_2014}. Firebase includes tools for storage, analytics, cloud functions, authentication, and more. Its main selling point is the simplicity of using it for mobile development. Similar to when choosing the front-end tool, the three main evaluation criteria were also for our decision to use Firebase:
 
 \textbf{Maturity:} 
-Released back in 2011, Firebase was one of the first backend solutions explicitly designed to support mobile applications \citep{metz_firebase_2012}. Companies worldwide use the solution (see examples at https://firebase.google.com/use-cases), and is consequently highly maintained and developed. Firebase also develops open-source libraries and extensions for use in various frameworks and languages. 
+Released back in 2011, Firebase was one of the first backend solutions explicitly designed to support mobile applications \citep{metz_firebase_2012}. Companies worldwide use the solution (see examples at \url{https://firebase.google.com/use-cases}), and is consequently highly maintained and developed. Firebase also develops open-source libraries and extensions for use in various frameworks and languages. 
 
-\textbf{Support for required functionality:} 
+\textbf{Support for required functionality:}
 Firebase has support for the backend tools needed to develop Hover, such as authentication, storage, and analytics. Authentication will be used to verify users and storage for saving game data, while analytics will be used to see how the users utilize the application during the test period.
 
 \textbf{Previous experience:}
@@ -53,17 +54,17 @@ Firebase was the only BaaS we had some prior knowledge of. Even though our exper
 The criteria valued the most in this decision was the previous experience. Both of us had some prior knowledge of Firebase. After doing some research, it seems like there are also more tools created for Firebase in React Native than any of the other services providers. Even though we chose Firebase, AWS Amplify, or Azure Mobile apps could also have been good alternatives.
 
 \subsection{Testing the technologies in a quick prototype}
-To make sure that the connection between Firebase and React Native, and other related important libraries we are going to use, are working as expected, we have developed a prototype in parallel with writing this chapter. The prototype includes a mobile application written in React Native, communicating with a database in Firebase. We have implemented a simple map in the explore-view centered on the user’s location and authentication. Functionality such as geo-fencing, fetching from database or storage, and game ideas have not yet been prototyped. In this way, we have tested the essential parts required for the game setup. Figure \ref{fig:concept_explore_view} in Chapter \ref{chap:game_design} show a screenshot of the explore-view and Figure \ref{fig:authentication} below show a screenshot of the authentication view from the prototype.
+To make sure that the connection between Firebase and React Native, and other related important libraries we are going to use, are working as expected, we have developed a prototype in parallel with writing this chapter. The prototype includes a mobile application written in React Native, communicating with a database in Firebase. We have implemented a simple map-view centered on the user’s location and authentication. Functionality such as geo-fencing, fetching from database or storage, and game ideas have not yet been prototyped. In this way, we have tested the essential parts required for the game setup. Figure \ref{fig:concept_explore_view} in Chapter \ref{chap:game_design} show a screenshot of the explore-view and Figure \ref{fig:authentication} below show a screenshot of the authentication view from the prototype. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.50\textwidth]{Images/ChosenTechnology/chosentechnology_authentication.jpeg}
-    \caption{A prototype of the Login page.}
+    \caption{The prototype's login in page.}
     \label{fig:authentication}
 \end{figure}
 
 \subsection{Summary}
-We have looked at the chosen technologies and some considerations regarding these technologies. After discussions and a lot of research and experimentation, we chose a combination of React Native and Firebase. In addition to selecting the technologies, we have developed a quick prototype to ensure the essential functionality is working as expected. 
+We have looked at the chosen technologies and some considerations regarding these technologies. After discussions and a lot of research and experimentation, we chose a combination of React Native and Firebase. In addition to selecting the technologies, we have developed a quick prototype to ensure the essential functionality is working as expected.
 
 \biblio % Needed for referencing to working when compiling individual subfiles - Do not remove
 \end{document}

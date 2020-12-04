@@ -3,20 +3,22 @@
 
 \section{Design an Enjoyable Game}
 \label{chap:designanenjoyable}
+
 How to create an enjoyable game is an important part of every game development process. This chapter presents a literature study of the subject based on work conducted by \citeauthor{malone_what_1980} in \citeyear{malone_what_1980}, and \citeauthor{sweetser_gameflow_2005}’s “GameFlow: a model for evaluating player enjoyment in games” article. \citeauthor{malone_what_1980}’s research outlines challenge, fantasy, and curiosity as the three main elements increasing motivation in games. The GameFlow article presents a model for evaluating enjoyment in games based on eight elements. Even though different authors wrote these articles, they present a lot of the same mindset in what characterizes an enjoyable game.
 
-\subsection{What makes things fun to learn?}
+\subsection{What Makes Things Fun to Learn?}
 Malone presented in his study from \citeyear{malone_what_1980} a framework for creating enjoyable games. As mentioned above, he organized the essential elements of a good game into the three categories—challenge, fantasy, and curiosity. Malone wrote multiple articles on the topic. His main findings were summarized in “What Makes Things Fun to Learn? Heuristics for Designing Instructional Computer Games”. Even though this research was conducted in 1980 and the examples he presents are somewhat old, the main concepts are still highly relevant today.
 
 \subsubsection{Challenge}
 The first property presented by Malone is \textit{challenge}:
 
-“In order for a computer game to be challenging, it must provide a goal whose attainment is uncertain.” \citep{malone_what_1980}. 
+\blockquote{In order for a computer game to be challenging, it must provide a goal whose attainment is uncertain} \citep{malone_what_1980}. 
 
 From this principle, three essential characteristics of why challenge is essential in good computer games follow:
 
 \textbf{Goal} \\
 As the first of the characteristics, goal is presented. Based on studies done by Malone, users tend to prefer games that have clearly defined goals. However, it is important to note that all goals are not equally valuable. Consequently, four different properties on how to create appropriate goals are mentioned:
+
 \begin{enumerate}
     \item Simple games should include obvious goals.
     \item A complex environment should provide a structure so that players can easily generate appropriately difficult goals.
@@ -47,7 +49,7 @@ In addition to goals and uncertain outcomes, self-esteem is mentioned in the art
 \subsubsection{Fantasy}
 The next characteristic is fantasy, which is often used in games to make them more appealing. In games, fantasies often appear as models of physical objects and social settings that are not truly present. Also, there may be situations or objects in these fantasies with varying degrees of impossibility, varying from absolutely impossible to utterly possible \citep{malone_what_1980-1}.
 
-In learning games, one can increase the fun by overlaying the curriculum with elements of fantasy. The fantasy can visualize the progression of the player towards the goal based on right or wrong answers. The goal may be to achieve a fantasy goal, like getting to the finish line in a marathon, or it may be avoiding some catastrophe, like the man getting hung in Hangman. In these games, the fantasy depends on how the skill is used, but not necessarily vice versa. Fantasies that only have the one-way logical dependency, where skill affects the fantasy, is called extrinsic fantasies. Extrinsic fantasies are good for arithmetic problems, where answers are either wrong or right, and the skill does not depend on the fantasy  \citep{malone_what_1980}.
+In learning games, one can increase the fun by overlaying the curriculum with elements of fantasy. The fantasy can visualize the progression of the player towards the goal based on right or wrong answers. The goal may be to achieve a fantasy goal, like getting to the finish line in a marathon, or it may be avoiding some catastrophe, like the man getting hung in Hangman. In these games, the fantasy depends on how the skill is used, but not necessarily vice versa. Fantasies that only have the one-way logical dependency, where skill affects the fantasy, is called extrinsic fantasies. Extrinsic fantasies are good for arithmetic problems, where answers are either wrong or right, and the skill does not depend on the fantasy \citep{malone_what_1980}.
 
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{Images/Theory/SkillFantasy.png}
@@ -56,10 +58,11 @@ In learning games, one can increase the fun by overlaying the curriculum with el
     \label{fig:skill_fantasy}
 \end{figure}
 
-Fantasies that have a two-way logical dependency are called intrinsic fantasies; the fantasy depends on the skill, and the skill depends on the fantasy. Figure \ref{fig:skill_fantasy} illustrates the two types of fantasy side-by-side. In the spelling game Hangman, the player’s spelling skills affect the fantasy, and the feedback of right or wrong guesses from the fantasy influences the player's skill as it becomes easier to guess new letters each time. Malone (\citeyear{malone_what_1980-1}) stated, “intrinsic fantasies are both more interesting and more instructional than extrinsic fantasies,” and it seems to be true for various reasons. One reason being that the use of skill in intrinsic fantasies often can be applied to real-world situations,like the game Lemonade Stand mentioned by Malone in his \citeyear{malone_what_1980-1} dissertation. In an audio-only version of the game, found on Amazon Alexa, children have to use their pre-existing knowledge and skills to sell lemonade \citep{einhorn_amazoncom_2019}. For this particular game, children may train their skills to handle money and do maths and later apply it to real-world situations. Malone further argues that when fantasies are closely related to the curriculum, they can use their existing knowledge to exploit analogies between what they know and the material. Building new knowledge and skills from pre-existing knowledge relates to the cognitive aspect of fantasy. In Lemonade Stand, players have to apply what they know of the physical objects involved in a lemonade sale, e.g., Lemons and money. If they connect product cost and price, or weather and sales, they will improve their maths, money, carefully listening, business, and probability.
+Fantasies that have a two-way logical dependency are called intrinsic fantasies; the fantasy depends on the skill, and the skill depends on the fantasy. Figure \ref{fig:skill_fantasy} illustrates the two types of fantasy side-by-side. In the spelling game Hangman, the player’s spelling skills affect the fantasy, and the feedback of right or wrong guesses from the fantasy influences the player's skill as it becomes easier to guess new letters each time. \citet{malone_what_1980} stated, “intrinsic fantasies are both more interesting and more instructional than extrinsic fantasies,” and it seems to be true for various reasons. One reason being that the use of skill in intrinsic fantasies often can be applied to real-world situations, like the game Lemonade Stand mentioned by Malone in his \citeyear{malone_what_1980} dissertation. Lemonade Stand is a business simulation game that teaches children about running a business.  In an audio-only version of the game, found on Amazon Alexa, children have to use their pre-existing knowledge and skills to sell lemonade \citep{einhorn_amazoncom_2019}. For this particular game, children may train their skills to handle money and do maths and later apply it to real-world situations. Malone further argues that when fantasies are closely related to the curriculum, they can use their existing knowledge to exploit analogies between what they know and the material. Building new knowledge and skills from pre-existing knowledge relates to the cognitive aspect of fantasy. In Lemonade Stand, players have to apply what they know of the physical objects involved in a lemonade sale, e.g., Lemons and money. If they connect product cost and price, or weather and sales, they will improve their maths, money, carefully listening, business, and probability.
 
 \textbf{The emotional aspect of fantasy} \\
-Fantasies in games can appeal to players differently based on what emotions they need to satisfy \citep{malone_what_1980-1}. It may be challenging to design a computer game that meets the emotional needs of the person playing. Lazzaro stated in (2008) that emotions are the key to a great player experience (PX), and game designers cannot directly design player emotions. However, they can design rules for choices and feedback, so-called mechanics. Mechanics are used to triggering certain emotions that engage and motivate players \citep{lazzaro_four_2008}. Lazzaro’s studies are partly based on Malones \citeyear{malone_heuristics_1982} conference paper, where he discusses how fantasy affects motivations. He states that “... fantasies can be very important in creating intrinsically motivating environments but that, unless the fantasies are carefully chosen to appeal to the target audience, they may actually make the environment less interesting rather than more.” \citep{malone_heuristics_1982}. This statement suggests that different people find different fantasies appealing and that the fantasy must be appropriate for the target audience. Furthermore, if games had different fantasies to choose between, players are more likely to find it enjoyable, motivating, and engaging, because it has a broader appeal.
+Fantasies in games can appeal to players differently based on what emotions they need to satisfy \citep{malone_what_1980}. It may be challenging to design a computer game that meets the emotional needs of the person playing. Lazzaro stated in  \citeyear{lazzaro_four_2008} that emotions are the key to a great player experience (PX), and game designers cannot directly design player emotions. However, they can design rules for choices and feedback, so-called mechanics. Mechanics are used to trigger certain emotions that engage and motivate players \citep{lazzaro_four_2008}.
+Lazzaro’s studies are partly based on \citet{malone_heuristics_1982}, where he discusses how fantasy affects motivations. He states that “... fantasies can be very important in creating intrinsically motivating environments but that, unless the fantasies are carefully chosen to appeal to the target audience, they may actually make the environment less interesting rather than more.” \citep{malone_heuristics_1982}. This statement suggests that different people find different fantasies appealing and that the fantasy must be appropriate for the target audience. Furthermore, if games had different fantasies to choose between, players are more likely to find it enjoyable, motivating, and engaging, because it has a broader appeal.
 
 \subsubsection{Curiosity}
 The last characteristic, curiosity, is about a player’s motivation to learn within a game environment. The learning is, however, independent from goal-seeking or fantasy-fulfillment. Games can trigger a player's curiosity by creating environments that have optimal information complexity. This implies that the environment must not have too high, nor too low, information complexity regarding the player’s existing knowledge. Finding such balance for the information complexity will evoke the player’s curiosity to explore the environment further. An optimal environment has a complexity level where the player uses its knowledge to create an expectation of how the environment should behave. Still, these expectations should sometimes be unmet to be novel and introduce an element of surprise.
@@ -71,29 +74,29 @@ Sensory curiosity is about the use of sensory-stimulating technology that attrac
 
 \begin{enumerate}
     \item \textbf{As decoration} \\
-    The use of audio and visual effects that are present regardless of user interactions. In games like Just Dance Now, this can be found as background music in the menu. Malone states that effects like in-game background music may initially increase the player’s interest, but it will quickly become tiresome. 
+    The use of audio and visual effects that are present regardless of user interactions. In games like Just Dance Now, this can be found as background music in the menu. Malone states that effects like in-game background music may initially increase the player’s interest, but it will quickly become tiresome.
     \item \textbf{For enhancing fantasy} \\
-     It is used to enhance fantasy in a game like “decorative” effects. However, the special effects are distinguishable because of its captivating nature and association with the fantasy. In Wii Fit, this appears as audio effects that mimic an audience. Not only does this enhance the fantasy, but it also strengthens the immersion in the game.
+    It is used to enhance fantasy in a game like “decorative” effects. However, the special effects are distinguishable because of its captivating nature and association with the fantasy. In Wii Fit, this appears as audio effects that mimic an audience. Not only does this enhance the fantasy, but it also strengthens the immersion in the game.
     \item \textbf{As a reward} \\
-    The use of audio and graphical effects to reward good performance. It can increase the motivation for reaching the goal. Pokémon Go uses flashing lights and stars, together with victory sound, when users perform well, for instance, when they catch a new Pokémon. However, the challenge related to reaching a defined goal can shift the focus away from users exercising their curiosity. 
+    The use of audio and graphical effects to reward good performance. It can increase the motivation for reaching the goal. Pokémon Go uses flashing lights and stars, together with victory sound, when users perform well, for instance, when they catch a new Pokémon. However, the challenge related to reaching a defined goal can shift the focus away from users exercising their curiosity.
     \item \textbf{As a representation system} \\
-    Is the use of audio and visuals to convey information without using text. This usage is widely used in games to convey information to the user efficiently. If a player in Pokémon Go unsuccessfully throws a Pokéball at a Pokémon, then the Pokéball will bounce away to indicate that a player missed the Pokémon.  
+    Is the use of audio and visuals to convey information without using text. This usage is widely used in games to convey information to the user efficiently. If a player in Pokémon Go unsuccessfully throws a Pokéball at a Pokémon, then the Pokéball will bounce away to indicate that a player missed the Pokémon.
 \end{enumerate}
 
 \textbf{Cognitive curiosity} \\
-Cognitive curiosity is about the desire to improve one’s knowledge structures. Malone claims that people prefer their cognitive structures to be complete, consistent, and parsimonious. According to his theory, to stimulate a player’s cognitive curiosity, they must be given just enough information to make their existing knowledge appear incomplete, inconsistent, or unparsimonious. This will engage the user because people are willing to learn more to improve their knowledge-structures. For instance, if a person only has 10 minutes left of a movie, they will likely finish the film to bring completeness to their knowledge structure.
+Cognitive curiosity is about the desire to improve one’s knowledge structures. Malone claims that people prefer their cognitive structures to be complete, consistent, and parsimonious. According to his theory, to stimulate a player’s cognitive curiosity, they must be given just enough information to make their existing knowledge appear incomplete, inconsistent, or miserly. This will engage the user because people are willing to learn more to improve their knowledge-structures. For instance, if a person only has 10 minutes left of a movie, they will likely finish the film to bring completeness to their knowledge structure.
 
 These general ideas are the root of several game design principles. One way is to produce responsive feedback that makes environments more interesting. Malone then goes on to present two-game design ideas about informative feedback.
 
 \begin{itemize}
-    \item \textbf{To engage a learner’s curiosity, feedback should be surprising.} \\
-    Surprising feedback can simply be random feedback that relates to the subject. Another way to have surprising feedback in the environment is to have an underlying consistency that is not clear at first. 
+    \item \textbf{To engage a learner’s curiosity, feedback should be surprising.}\\
+    Surprising feedback can simply be random feedback that relates to the subject. Another way to have surprising feedback in the environment is to have an underlying consistency that is not clear at first.
     \item \textbf{To be educational, feedback should be constructive.} \\
-    Constructive feedback should not only reveal if applied knowledge is incomplete, inconsistent, or unparsimonious; it should also indicate how the user can improve their input to become complete, consistent, and parsimonious.
+    Constructive feedback should not only reveal if applied knowledge is incomplete, inconsistent, or miserly; it should also indicate how the user can improve their input to become complete, consistent, and parsimonious.
 \end{itemize}
 
 \subsection{GameFlow}
-Another essential framework for creating good games is Sweetser and Wyeth’s GameFlow (2005). The authors define a model for designing, evaluating, and understanding enjoyment in games based on work previously done by \citeauthor{csikszentmihalyi_flow_1990} in 1990. \citeauthor{csikszentmihalyi_flow_1990} conducted extensive research and surveys to find out what makes experiences enjoyable. Sweetser and Wyeth modified these principles to be representative of enjoyment in games. The GameFlow model consists of eight elements—concentration, challenge, skills, control, clear goals, feedback, immersion, and social interaction. Each of these includes a goal and a set of criteria that can be used when developing games \citep{sweetser_gameflow_2005}.
+Another essential framework for creating good games is \citeauthor{sweetser_gameflow_2005}’s “GameFlow: A Model for Evaluating Player Enjoyment in Games“ from \citeyear{sweetser_gameflow_2005}. The authors define a model for designing, evaluating, and understanding enjoyment in games based on work previously done by \citeauthor{csikszentmihalyi_flow_1990} in 1990. \citeauthor{csikszentmihalyi_flow_1990} conducted extensive research and surveys to find out what makes experiences enjoyable. Sweetser and Wyeth modified these principles to be representative of enjoyment in games. The GameFlow model consists of eight elements—concentration, challenge, skills, control, clear goals, feedback, immersion, and social interaction. Each of these includes a goal and a set of criteria that can be used when developing games \citep{sweetser_gameflow_2005}.
 
 \subsubsection{Concentration}
 Concentration is the first of the eight elements presented in the article. Enhancing how much concentration a task requires increases its immersion. Games should grab the player’s attention immediately and keep holding it for as long as possible. The player’s workload should be maintained at an appropriate level, and unimportant tasks should not be presented during the game to achieve this. Also, nongame-related interactions (e.g., settings menu) should be minimized, and the game should strive to use as much screen as possible for the gameplay. 
@@ -108,7 +111,7 @@ In Guitar Hero, players have to stay highly concentrated throughout the game. Th
 \end{figure}
 
 \subsubsection{Challenge}
-Challenge is often considered the essential aspect of good game design, and appropriate challenges should be presented to the player. The players’ skill levels should match the challenges given. Additionally, the challenge level should increase as the player moves through the game at an appropriate pace. In the language learning game Duolingo, players take a placement test to start at an appropriate level of challenge, as seen in Figure \ref{fig:dulingo_placement_test}.
+Challenge is often considered the essential aspect of good game design, and appropriate challenges should be presented to the player. The players’ skill levels should match the challenges given. Additionally, the challenge level should increase as the player moves through the game at an appropriate pace. In the language learning game Duolingo, players take a placement test to start at an appropriate level of challenge, as seen in Figure \ref{fig:dulingo_placement_test}. This test makes sure that any previous language experience is taken into consideration to match the player’s skill to the level of difficulty.
 
 \begin{figure}[H]
     \includegraphics[width=0.7\textwidth]{Images/Theory/DuolingoPlacementTest.png}
@@ -132,7 +135,7 @@ Racing games are, in general, examples of games that are intuitive to maneuver. 
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{Images/Theory/wii_racing_wheel_control.jpeg}
     \centering
-    \caption{ Wii Steering wheel used when playing a racing game.}
+    \caption{Wii Steering wheel used to play a racing game.}
     \label{fig:racing_wheel_controller}
 \end{figure}
 
@@ -149,7 +152,7 @@ Deep and effortless involvement in games is often presented in studies of game-p
 \begin{figure}[H]
     \includegraphics[width=0.8\textwidth]{Images/Theory/witcher3_immersion.png}
     \centering
-    \caption{Gameplay screenshot from Witcher 3.}
+    \caption{Screenshot from gameplay in Witcher 3.}
     \label{fig:witcher3_immersion}
 \end{figure}
 
